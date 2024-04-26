@@ -15,16 +15,44 @@
 
 <div class="login">
     <img src="{{ Vite::asset('resources/images/login-bg.png') }}" alt="login image" class="login__image">
+{{--    <header class="header">--}}
+{{--        <a href="#" class="logo">NEWS</a>--}}
+
+{{--        <input type="checkbox" id="check">--}}
+
+{{--        <label for="check" class="icons">--}}
+{{--            <i class='bx bx-menu' id="menu-icon"></i>--}}
+{{--            <i class='bx bx-x' id="close-icon"></i>--}}
+{{--        </label>--}}
+
+{{--        <nav class="navbar">--}}
+{{--            <a href="#" style="--i:0;">Home</a>--}}
+{{--            <a href="#" style="--i:1;">About</a>--}}
+{{--            <a href="#" style="--i:2;">Gallery</a>--}}
+{{--            <a href="#" style="--i:3;">Services</a>--}}
+{{--            <a href="#" style="--i:4;">Contact</a>--}}
+{{--        </nav>--}}
+{{--    </header>--}}
     @extends('layout')
     @section('header')
     @endsection
 
+
     <form action="" class="login__form">
-        <h1 class="login__title">Login</h1>
+        <h1 class="login__title">Register</h1>
 
         <div class="login__content">
             <div class="login__box">
                 <i class="ri-user-3-line login__icon"></i>
+
+                <div class="login__box-input">
+                    <input type="email" required class="login__input" placeholder=" ">
+                    <label for="" class="login__label">Name</label>
+                </div>
+            </div>
+
+            <div class="login__box">
+                <i class='bx bx-envelope login__icon'></i>
 
                 <div class="login__box-input">
                     <input type="email" required class="login__input" placeholder=" ">
@@ -52,10 +80,10 @@
             <a href="#" class="login__forgot">Forgot password?</a>
         </div>
 
-        <button class="login__button">Login</button>
+        <button class="login__button">Register</button>
 
         <p class="login__register">
-            Don't have an account? <a href="#">Register</a>
+            Do you have an account? <a href="#">login</a>
         </p>
     </form>
 </div>
