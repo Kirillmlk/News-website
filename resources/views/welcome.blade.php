@@ -26,7 +26,7 @@
                     <img src="{{ Vite::asset('resources/images/blue.jpg') }}" alt="">
                 </div>
                 <div class="content-card">
-                    <h4>TiTie One</h4>
+                    <h4>Title One</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat.</p>
                     <a href="#">Read more</a>
                 </div>
@@ -40,7 +40,7 @@
                     <img src="{{ Vite::asset('resources/images/blue.jpg') }}" alt="">
                 </div>
                 <div class="content-card">
-                    <h4>TiTie One</h4>
+                    <h4>Title One</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat.</p>
                     <a href="#">Read more</a>
                 </div>
@@ -54,7 +54,7 @@
                     <img src="{{ Vite::asset('resources/images/blue.jpg') }}" alt="">
                 </div>
                 <div class="content-card">
-                    <h4>TiTie One</h4>
+                    <h4>Title One</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat.</p>
                     <a href="#">Read more</a>
                 </div>
