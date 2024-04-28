@@ -11,7 +11,7 @@
     <nav class="navbar">
         <a href="/" style="--i:0;">Home</a>
         <a href="#" style="--i:1;">About</a>
-        <a href="#" style="--i:2;">Gallery</a>
+        <a href="/create" style="--i:2;">Create News</a>
         <a href="/login" style="--i:3;">Sign In</a>
         <a href="/register" style="--i:4;">Sign Up</a>
     </nav>
