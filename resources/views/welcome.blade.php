@@ -12,6 +12,10 @@
     <title>Home</title>
 </head>
 <body>
+<img src="{{ Vite::asset('resources/images/bg_main.jpg') }}" alt="login image" class="login__image">
+@extends('layout')
+@section('header')
+@endsection
 <div class="container-news">
     <div class="blog-section">
         <div class="title-news">
@@ -30,9 +34,6 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat.</p>
                     <a href="#">Read more</a>
                 </div>
-                <div class="posted-date">
-                    <p>Posted on Aug 7, 2024</p>
-                </div>
             </div>
 
             <div class="card">
@@ -44,9 +45,6 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat.</p>
                     <a href="#">Read more</a>
                 </div>
-                <div class="posted-date">
-                    <p>Posted on Aug 7, 2024</p>
-                </div>
             </div>
 
             <div class="card">
@@ -57,9 +55,6 @@
                     <h4>Title One</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat.</p>
                     <a href="#">Read more</a>
-                </div>
-                <div class="posted-date">
-                    <p>Posted on Aug 7, 2024</p>
                 </div>
             </div>
 
