@@ -20,4 +20,9 @@ class MainController extends Controller
     {
         return view('register');
     }
+
+    public function addNews()
+    {
+        return view('addnews');
+    }
 }

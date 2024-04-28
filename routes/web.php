@@ -20,3 +20,5 @@ Route::get('/login', [MainController::class, 'login']);
 
 Route::get('/register', [MainController::class, 'register']);
 
+Route::get('/create', [MainController::class, 'addNews']);
+

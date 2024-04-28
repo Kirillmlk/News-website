@@ -444,7 +444,14 @@ img {
     }
 }
 
+/* Create news */
 
+.container-form {
+    position: relative;
+    max-width: 800px; /* Установите желаемую максимальную ширину контейнера */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+    padding-top: 15%;
+}
 
 
 
