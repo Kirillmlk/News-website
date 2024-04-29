@@ -10,7 +10,8 @@ class MainController extends Controller
 {
     public function welcome()
     {
-        return view('welcome');
+        $news = new Contact();
+        return view('welcome', ['news' => $news->all()]);
     }
 
     public function login()

@@ -25,42 +25,22 @@
             </p>
         </div>
         <div class="cards">
+            @foreach($news as $el)
             <div class="card">
                 <div class="image-section">
                     <img src="{{ Vite::asset('resources/images/blue.jpg') }}" alt="">
                 </div>
                 <div class="content-card">
-                    <h4>Title One</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat.</p>
+                    <h4>{{ $el->subject }}</h4>
+                    <p>{{ $el->message }}</p>
+                    <p>{{ $el->email }}</p>
                     <a href="#">Read more</a>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="image-section">
-                    <img src="{{ Vite::asset('resources/images/blue.jpg') }}" alt="">
-                </div>
-                <div class="content-card">
-                    <h4>Title One</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat.</p>
-                    <a href="#">Read more</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="image-section">
-                    <img src="{{ Vite::asset('resources/images/blue.jpg') }}" alt="">
-                </div>
-                <div class="content-card">
-                    <h4>Title One</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, repellat.</p>
-                    <a href="#">Read more</a>
-                </div>
-            </div>
-
-
+            @endforeach
         </div>
     </div>
 </div>
 </body>
 </html>
+
