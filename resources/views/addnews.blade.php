@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 <body>
-<img src="{{ Vite::asset('resources/images/bg_main.jpg') }}" alt="login image" class="login__image">
+<img src="{{ Vite::asset('resources/images/bg_main.jpg') }}" alt="login image" class="main__image">
 @extends('layout')
 @section('header')
 @endsection
@@ -30,11 +30,12 @@
         </div>
     @endif
 
-    <form class="mt-4" method="post" action="/create/check">
+    <form class="mt-4" method="post" action="/create/check" enctype="multipart/form-data">
         @csrf
         <input type="email" name="email" id="email" placeholder="Введите email" class="form-control"><br>
-        <input type="text" name="subject" id="subject" placeholder="Введите отзыв" class="form-control"><br>
-        <textarea name="message" id="message" class="form-control" placeholder="Введите сообщение"></textarea><br>
+        <input type="text" name="subject" id="subject" placeholder="Введите название новости" class="form-control"><br>
+        <textarea name="message" id="message" class="form-control" placeholder="Введите вашу новость"></textarea><br>
+        <input type="file" name="image" id="image" class="form-control"><br> <!-- Добавлено поле для загрузки изображения -->
         <button type="submit" class="btn btn-success">Отправить</button>
     </form>
 </div>

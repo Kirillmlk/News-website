@@ -1,4 +1,6 @@
+
 <header class="header">
+
     <a href="#" class="logo">NEWS</a>
 
     <input type="checkbox" id="check">

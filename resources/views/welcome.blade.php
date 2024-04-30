@@ -12,7 +12,7 @@
     <title>Home</title>
 </head>
 <body>
-<img src="{{ Vite::asset('resources/images/bg_main.jpg') }}" alt="login image" class="login__image">
+<img src="{{ Vite::asset('resources/images/bg_main.jpg') }}" alt="login image" class="main__image">
 @extends('layout')
 @section('header')
 @endsection
@@ -26,17 +26,17 @@
         </div>
         <div class="cards">
             @foreach($news as $el)
-            <div class="card">
-                <div class="image-section">
-                    <img src="{{ Vite::asset('resources/images/blue.jpg') }}" alt="">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="{{ asset('storage/images/' . $el->image) }}" alt="Изображение карточки">
+                    </div>
+                    <div class="content-card">
+                        <h4>{{ $el->subject }}</h4>
+                        <p>{{ $el->message }}</p>
+                        <p>Author: {{ $el->email }}</p>
+                        <a href="#">Read more</a>
+                    </div>
                 </div>
-                <div class="content-card">
-                    <h4>{{ $el->subject }}</h4>
-                    <p>{{ $el->message }}</p>
-                    <p>{{ $el->email }}</p>
-                    <a href="#">Read more</a>
-                </div>
-            </div>
             @endforeach
         </div>
     </div>

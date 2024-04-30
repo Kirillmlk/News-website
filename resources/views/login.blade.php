@@ -14,7 +14,7 @@
 <body>
 
 <div class="login">
-    <img src="{{ Vite::asset('resources/images/login-bg.png') }}" alt="login image" class="login__image">
+    <img src="{{ Vite::asset('resources/images/login-bg.png') }}" alt="login image" class="main__image">
     @extends('layout')
     @section('header')
     @endsection
