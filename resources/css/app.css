@@ -449,8 +449,8 @@ img {
 
 .container-form {
     position: relative;
-    max-width: 800px; /* Установите желаемую максимальную ширину контейнера */
-    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+    max-width: 800px;
+    margin: 0 auto;
     padding-top: 15%;
 }
 
@@ -459,10 +459,30 @@ img {
 }
 
 
+.news__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%;
+    padding: 20px;
+    background-color: #201f1f;
+    text-align: center;
+    border-radius: 20px;
+    z-index: 1;
+}
 
+.news__details {
+    color: #ffffff;
+}
 
+/*.news__details h2 {*/
+/*    margin-bottom: 20px;*/
+/*}*/
 
-
-
-
-
+/*.news__details p {*/
+/*    padding-top: 20px;*/
+/*}*/
+.news__message {
+    padding: 20px;
+}

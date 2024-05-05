@@ -1,5 +1,5 @@
 @extends('layout')
-@section('header')
+@section('main')
 
 <div class="container-form">
     <h1>Оставьте свою новость</h1>

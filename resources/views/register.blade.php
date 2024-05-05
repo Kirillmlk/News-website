@@ -1,5 +1,5 @@
 @extends('layout')
-@section('header')
+@section('main')
 <div class="login">
     <form action="" class="login__form">
         <h1 class="login__title">Register</h1>

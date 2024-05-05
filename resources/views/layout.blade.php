@@ -15,7 +15,7 @@
 <body>
 <img src="{{ Vite::asset('resources/images/bg_main.jpg') }}" alt="login image" class="main__image">
 <header class="header">
-    <a href="#" class="logo">NEWS</a>
+    <a href="{{ route('welcome') }}" class="logo">NEWS</a>
     <input type="checkbox" id="check">
     <label for="check" class="icons">
         <i class='bx bx-menu' id="menu-icon"></i>
@@ -33,4 +33,4 @@
 </body>
 </html>
 
-@yield('header')
+@yield('main')
