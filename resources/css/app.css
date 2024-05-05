@@ -396,6 +396,8 @@ img {
 
 .card {
     backdrop-filter: blur(50px);
+    background-color: #535252;
+    border: none;
     border-radius: 20px;
 }
 
@@ -409,6 +411,8 @@ img {
 }
 
 .content-card h4 {
+    display: flex;
+    justify-content: center;
     font-size: 24px;
     color: #c9c9a8;
     font-weight: 400;
