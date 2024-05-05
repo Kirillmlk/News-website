@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,12 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [MainController::class, 'welcome']);
+Route::get('/', [MainController::class, 'welcome'])->name('welcome');
 
-Route::get('/login', [MainController::class, 'login']);
+Route::get('/login', [MainController::class, 'login'])->name('login');;
 
-Route::get('/register', [MainController::class, 'register']);
+Route::get('/register', [MainController::class, 'register'])->name('register');
 
-Route::get('/create', [MainController::class, 'add_news'])->name('create');
-Route::post('/create/check', [MainController::class, 'create_check']);
+Route::get('/create', [FormController::class, 'add_news'])->name('create');
+Route::post('/create/check', array(FormController::class, 'create_check'))->name('create_check');
 

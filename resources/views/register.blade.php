@@ -46,7 +46,7 @@
         <button class="login__button">Register</button>
 
         <p class="login__register">
-            Do you have an account? <a href="/login">login</a>
+            Do you have an account? <a href="{{ route('login') }}">login</a>
         </p>
     </form>
 </div>
