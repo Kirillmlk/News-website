@@ -5,7 +5,7 @@
     <div class="news__details">
         <h2>{{ $news->subject }}</h2>
         <p class="news__message">{{ $news->message }}</p>
-        <p>Автор: {{ $news->email }}</p>
+        <p>Author: {{ $news->email }}</p>
     </div>
 </div>
 @endsection
